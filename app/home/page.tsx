@@ -14,7 +14,7 @@ export default function Home() {
     const handleSubmit = async () => {
         setIsSending(true);
         try {
-            const res = await axios.post('http://localhost:5000/post', {
+            await axios.post('http://localhost:5000/post', {
                 problem: problem,
                 solution: solution
             });
