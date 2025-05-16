@@ -14,7 +14,7 @@ export default function Home() {
     const handleSubmit = async () => {
         setIsSending(true);
         try {
-            await axios.post('http://localhost:5000/post', {
+            await axios.post('https://grievance-portal-microservice.onrender.com/post', {
                 problem: problem,
                 solution: solution
             });
